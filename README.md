@@ -17,8 +17,8 @@ composer require jaeger/querylist-absolute-url
 ## Installation options
 
  **QueryList::use(AbsoluteUrl::class,$opt1,$opt2)**
-- ***$opt1**:`absoluteUrl` function alias.
-- ***$opt2**:`absoluteUrlHelper` function alias.
+- **$opt1**:`absoluteUrl` function alias.
+- **$opt2**:`absoluteUrlHelper` function alias.
 
 ## Usage
 
@@ -36,7 +36,7 @@ $ql->use(AbsoluteUrl::class,'absoluteUrl','absoluteUrlHelper');
 
 - Convert All Link
 
-```
+```php
 $data = $ql->get('https://toutiao.io/')
 	->absoluteUrl('https://toutiao.io/')
     ->find('a')->attrs('href');
@@ -58,7 +58,7 @@ Array
 
 - Convert Helper
 
-```
+```php
 $data = $ql->rules([
     'link' => ['a','href']
 ])->get('https://toutiao.io/')->query()->getData(function ($item) use($ql){
