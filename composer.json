@@ -1,0 +1,13 @@
+{
+    "require": {
+        "pguardiario/phpuri": "^1.0"
+    },
+    "require-dev": {
+        "jaeger/querylist": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "QL\\Ext\\": ""
+        }
+    }
+}
