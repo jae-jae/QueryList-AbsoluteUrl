@@ -11,8 +11,8 @@ composer require jaeger/querylist-absolute-url
 ```
 
 ## API
--  **absoluteUrl($url)**: Convert Page All Url to Absolute Url,return **QueryList**
--  **absoluteUrlHelper($url,$relativeUrl)**:  Convert Helper Function,return **string**
+-  **absoluteUrl($baseUrl)**: Convert Page All Url to Absolute Url,return **QueryList**
+-  **absoluteUrlHelper($baseUrl,$relativeUrl)**:  Convert Helper Function,return **string**
 
 ## Installation options
 
