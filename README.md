@@ -5,7 +5,7 @@ QueryList插件:转换URL相对路径到绝对路径.
 
 > QueryList:[https://github.com/jae-jae/QueryList](https://github.com/jae-jae/QueryList)
 
-## Installation
+## Installation for QueryList4
 ```
 composer require jaeger/querylist-absolute-url
 ```
