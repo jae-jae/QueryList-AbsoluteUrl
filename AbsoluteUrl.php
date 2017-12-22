@@ -38,6 +38,11 @@ class AbsoluteUrl implements PluginContract
             $absoluteUrl = $parser->join($relativeUrl);
             $item->attr('href',$absoluteUrl);
         });
+        $ql->find('img')->map(function($item) use ($parser,$ql){
+            $relativeUrl = $item->attr('src');
+            $absoluteUrl = $parser->join($relativeUrl);
+            $item->attr('src',$absoluteUrl);
+        });
        $ql->setHtml($ql->find('')->html());
         return $ql;
     }
